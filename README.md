@@ -196,7 +196,7 @@ ret
 
 
 ## Result :
- 
+Thus, Assembly Language Program for fundamental arithmetic and logical operations are exected succesfully. 
 
 
 
