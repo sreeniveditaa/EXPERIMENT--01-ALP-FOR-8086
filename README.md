@@ -1,6 +1,6 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
+Name : Sree Niveditaa saravanan
+Roll no : 212223230213 
 Date of experiment :
 
 
@@ -78,21 +78,121 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
-
-
+```
+org 100h
+MOV al,11h;
+MOV bl,20h;
+ADD al,bl;
+MOV [4000h],al;
+ret
+```
 
 ## Output  
- 
+
+![addition](https://github.com/user-attachments/assets/afa6a3c4-c54c-4c1b-bd91-f0603e0f87ea)
+
 ## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
-## Multiplication alp 
+```
+org 100h
+MOV al,20h;
+MOV bl,[2000h];
+SUB bl,al;
+MOV [3000h],bl;
+ret
+```
+
+## Output 
+
+![subraction](https://github.com/user-attachments/assets/45327ba0-3cb2-41d3-94c2-cc653a3bbe57)
+
+## Multiplication alp
+```
+org 100h
+MOV al,13h;
+MOV bl,2h;
+MUL bl;
+MOV [6000h],al;
+ret
+```
+
  ## Output  
 
+![multiplication](https://github.com/user-attachments/assets/6912b517-eaba-4e00-a140-e589ebd3b1db)
 
 ## Division alp 
 
+```
+org 100h
+MOV al,26h;
+MOV bl,[2000h];
+DIV bl;
+MOV [3000h],al;
+ret
+```
+
 ## Output  
+
+![division](https://github.com/user-attachments/assets/b8ab5d2b-5018-477d-9051-918b5002761c)
+
+## AND alp
+
+```
+org 100h
+MOV [SI],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+AND AX,BX;
+ret
+```
+
+## Output :
+
+![and](https://github.com/user-attachments/assets/b4fca661-4c3f-4702-8ded-ab7971e1b279)
+
+## OR alp
+
+```
+org 100h
+MOV SI,0532H;
+MOV AX,0A32H;
+MOV BX,0B13H;
+OR AX,BX;
+ret
+```
+
+## Output :
+
+![or](https://github.com/user-attachments/assets/f450c12b-0d00-4251-99f6-e3cdb708cde9)
+
+## NOT alp
+
+```
+org 100h
+MOV [SI+4],AX;
+MOV AX,0A32H;
+NOT AX;
+MOV [SI+6],AX;
+ret
+```
+
+## Output :
+
+![not](https://github.com/user-attachments/assets/00d1b3d7-e2bc-4d72-b3fc-566d7d356413)
+
+## XOR alp
+
+```
+org 100h
+MOV [SI+2],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+XOR AX,BX;
+ret
+```
+
+## Output :
+
+![xor](https://github.com/user-attachments/assets/6730e32f-a294-4c09-91a4-e8f233827589)
 
 
 ## Result :
